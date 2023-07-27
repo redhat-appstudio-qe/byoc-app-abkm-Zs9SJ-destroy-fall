@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: jbrw
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-uhqi-tenant/byoc-app-abkm/jbrw@sha256:c9d509ba7d73bea13500bd755e2580821c6158a1fdaf0f75517d840ed67d7c81
+        name: my-java-quarkus
+        resources: {}
+status: {}
