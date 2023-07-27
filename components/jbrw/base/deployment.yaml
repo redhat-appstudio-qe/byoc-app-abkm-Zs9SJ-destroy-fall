@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: jbrw
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/byoc-uhqi-tenant/byoc-app-abkm/jbrw@sha256:c9d509ba7d73bea13500bd755e2580821c6158a1fdaf0f75517d840ed67d7c81
         name: my-java-quarkus
         ports:
         - containerPort: 8081
